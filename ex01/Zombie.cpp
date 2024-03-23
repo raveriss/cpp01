@@ -6,13 +6,12 @@
 /*   By: raveriss <raveriss@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/13 17:43:47 by raveriss          #+#    #+#             */
-/*   Updated: 2024/03/23 11:44:38 by raveriss         ###   ########.fr       */
+/*   Updated: 2024/03/23 20:26:11 by raveriss         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 
 #include "Zombie.hpp"
-#include <iostream>
 
 /**
  * @brief Constructeur par défaut de la classe Zombie.

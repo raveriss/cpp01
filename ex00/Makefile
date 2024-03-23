@@ -1,7 +1,7 @@
 # Makefile for the Zombie project with progress bar and separate object directory
 
 NAME = zombie
-SRC_DIR = src
+SRC_DIR = srcs
 OBJ_DIR = obj
 INC_DIR = include
 
