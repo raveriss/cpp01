@@ -6,11 +6,12 @@
 /*   By: raveriss <raveriss@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/13 17:24:17 by raveriss          #+#    #+#             */
-/*   Updated: 2024/03/14 19:17:29 by raveriss         ###   ########.fr       */
+/*   Updated: 2024/03/23 17:59:53 by raveriss         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "Zombie.h"
+#include "../include/Zombie.hpp"
+#include <iostream>
 
 /**
  * @brief Point d'entrée principal du programme.
@@ -22,11 +23,14 @@
  * @return int Le code de sortie du programme. Retourne 0 si tout se passe bien.
  */
 int main() {
-    Zombie* heapZombie = newZombie("HeapZombie");
-    heapZombie->announce();
-    delete heapZombie;
+    try {
+        Zombie* heapZombie = newZombie(""); // Test avec un nom vide
+        heapZombie->announce();
+        delete heapZombie;
+    } catch (const std::invalid_argument& e) {
+        std::cerr << "Erreur : " << e.what() << std::endl;
+    }
 
-    randomChump("StackZombie");
-
+    randomChump("stackZombie"); // Test avec un nom vide
     return 0;
 }

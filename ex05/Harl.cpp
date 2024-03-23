@@ -6,13 +6,24 @@
 /*   By: raveriss <raveriss@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/14 13:16:55 by raveriss          #+#    #+#             */
-/*   Updated: 2024/03/14 13:16:57 by raveriss         ###   ########.fr       */
+/*   Updated: 2024/03/23 11:41:01 by raveriss         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "Harl.hpp"
 
 Harl::Harl() {
+    levels[0] = "DEBUG";
+    levels[1] = "INFO";
+    levels[2] = "WARNING";
+    levels[3] = "ERROR";
+    complaints[0] = &Harl::debug;
+    complaints[1] = &Harl::info;
+    complaints[2] = &Harl::warning;
+    complaints[3] = &Harl::error;
+}
+
+Harl::~Harl() {
     levels[0] = "DEBUG";
     levels[1] = "INFO";
     levels[2] = "WARNING";

@@ -6,7 +6,7 @@
 /*   By: raveriss <raveriss@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/14 12:07:30 by raveriss          #+#    #+#             */
-/*   Updated: 2024/03/14 12:07:40 by raveriss         ###   ########.fr       */
+/*   Updated: 2024/03/23 11:39:30 by raveriss         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,6 +23,7 @@ public:
     Weapon(const std::string& type);
     const std::string& getType() const;
     void setType(const std::string& type);
+    ~Weapon();
 };
 
 #endif

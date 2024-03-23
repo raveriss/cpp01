@@ -6,7 +6,7 @@
 /*   By: raveriss <raveriss@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/14 12:09:16 by raveriss          #+#    #+#             */
-/*   Updated: 2024/03/14 12:09:18 by raveriss         ###   ########.fr       */
+/*   Updated: 2024/03/23 18:47:26 by raveriss         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,4 +25,12 @@ void HumanB::attack() const {
     } else {
         std::cout << name << " has no weapon" << std::endl;
     }
+}
+
+/**
+ * @brief Destructeur de la classe Zombie.
+ * Affiche un message dans la console lorsqu'un Zombie est détruit.
+ */
+HumanB::~HumanB() {
+    std::cout << name << " is destroyed." << std::endl;
 }

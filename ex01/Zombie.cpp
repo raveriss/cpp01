@@ -6,7 +6,7 @@
 /*   By: raveriss <raveriss@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/13 17:43:47 by raveriss          #+#    #+#             */
-/*   Updated: 2024/03/14 19:23:49 by raveriss         ###   ########.fr       */
+/*   Updated: 2024/03/23 11:44:38 by raveriss         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,6 +21,8 @@
  * en utilisant la méthode `setName`.
  */
 Zombie::Zombie() {}
+
+Zombie::~Zombie() {}
 
 /**
  * @brief Définit le nom du Zombie.

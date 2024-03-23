@@ -6,7 +6,7 @@
 /*   By: raveriss <raveriss@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/14 13:16:42 by raveriss          #+#    #+#             */
-/*   Updated: 2024/03/14 13:21:17 by raveriss         ###   ########.fr       */
+/*   Updated: 2024/03/23 11:32:02 by raveriss         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,6 +20,7 @@ class Harl {
 public:
     Harl();
     void complain(std::string level);
+    ~Harl();
 
 private:
     void debug(void);

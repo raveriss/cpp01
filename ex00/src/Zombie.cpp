@@ -6,11 +6,11 @@
 /*   By: raveriss <raveriss@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/13 17:23:27 by raveriss          #+#    #+#             */
-/*   Updated: 2024/03/14 19:06:43 by raveriss         ###   ########.fr       */
+/*   Updated: 2024/03/23 17:56:30 by raveriss         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "Zombie.h"
+#include "../include/Zombie.hpp"
 #include <iostream>
 
 /**
@@ -25,7 +25,7 @@ Zombie::Zombie() : _name("Unnamed") {}
  * 
  * @param name Le nom du Zombie à créer.
  */
-Zombie::Zombie(const std::string& name) : _name(name) {}
+Zombie::Zombie(std::string name) : _name(name) {}
 
 /**
  * @brief Destructeur de la classe Zombie.

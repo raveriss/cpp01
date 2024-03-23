@@ -6,11 +6,11 @@
 /*   By: raveriss <raveriss@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/13 17:24:01 by raveriss          #+#    #+#             */
-/*   Updated: 2024/03/14 19:07:34 by raveriss         ###   ########.fr       */
+/*   Updated: 2024/03/23 17:52:58 by raveriss         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "Zombie.h"
+#include "../include/Zombie.hpp"
 
 /**
  * @brief Fonction utilitaire créant et annonçant un Zombie.
@@ -22,6 +22,7 @@
  * @param name Le nom du Zombie à créer et annoncer.
  */
 void randomChump(std::string name) {
-    Zombie zombie(name);
+    std::string effectiveName = name.empty() ? "UnnamedZombie" : name;
+    Zombie zombie(effectiveName);
     zombie.announce();
 }
