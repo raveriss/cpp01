@@ -6,7 +6,7 @@
 /*   By: raveriss <raveriss@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/14 13:16:42 by raveriss          #+#    #+#             */
-/*   Updated: 2024/03/23 11:32:02 by raveriss         ###   ########.fr       */
+/*   Updated: 2024/03/24 13:38:26 by raveriss         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,7 @@ public:
     void complain(std::string level);
     ~Harl();
 
-private:
+private:z
     void debug(void);
     void info(void);
     void warning(void);
