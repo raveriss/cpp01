@@ -1,36 +1,27 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   HumanB.cpp                                         :+:      :+:    :+:   */
+/*   HumanA.cpp                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: raveriss <raveriss@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/03/14 12:09:16 by raveriss          #+#    #+#             */
-/*   Updated: 2024/03/23 18:47:26 by raveriss         ###   ########.fr       */
+/*   Created: 2024/03/14 12:08:40 by raveriss          #+#    #+#             */
+/*   Updated: 2024/03/25 17:22:32 by raveriss         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-// HumanB.cpp
-#include "HumanB.hpp"
+#include "../include/HumanA.hpp"
 
-HumanB::HumanB(const std::string& name) : name(name), weapon(NULL) {}
+HumanA::HumanA(const std::string& name, Weapon& weapon) : name(name), weapon(weapon) {}
 
-void HumanB::setWeapon(Weapon& weapon) {
-    this->weapon = &weapon;
-}
-
-void HumanB::attack() const {
-    if (weapon) {
-        std::cout << name << " attacks with their " << weapon->getType() << std::endl;
-    } else {
-        std::cout << name << " has no weapon" << std::endl;
-    }
+void HumanA::attack() const {
+    std::cout << name << " attacks with their " << weapon.getType() << std::endl;
 }
 
 /**
  * @brief Destructeur de la classe Zombie.
  * Affiche un message dans la console lorsqu'un Zombie est détruit.
  */
-HumanB::~HumanB() {
+HumanA::~HumanA() {
     std::cout << name << " is destroyed." << std::endl;
 }

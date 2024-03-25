@@ -6,11 +6,11 @@
 /*   By: raveriss <raveriss@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/13 17:24:01 by raveriss          #+#    #+#             */
-/*   Updated: 2024/03/23 20:26:06 by raveriss         ###   ########.fr       */
+/*   Updated: 2024/03/25 12:54:48 by raveriss         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "Zombie.hpp"
+#include "../include/Zombie.hpp"
 
 /**
  * @brief Crée un Zombie temporaire et l'annonce.

@@ -6,12 +6,11 @@
 /*   By: raveriss <raveriss@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/13 17:43:47 by raveriss          #+#    #+#             */
-/*   Updated: 2024/03/23 20:26:11 by raveriss         ###   ########.fr       */
+/*   Updated: 2024/03/25 17:06:40 by raveriss         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-
-#include "Zombie.hpp"
+#include "../include/Zombie.hpp"
 
 /**
  * @brief Constructeur par défaut de la classe Zombie.
@@ -20,6 +19,10 @@
  * en utilisant la méthode `setName`.
  */
 Zombie::Zombie() {}
+
+
+Zombie::Zombie(const std::string &name) : _name(name) {}
+
 
 Zombie::~Zombie() {}
 

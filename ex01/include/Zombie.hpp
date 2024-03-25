@@ -7,9 +7,10 @@
 class Zombie {
 public:
     Zombie();
+    Zombie(const std::string &name); // Ajout du constructeur qui accepte un std::string
+    ~Zombie();
     void setName(const std::string &name);
     void announce() const;
-    ~Zombie();
 
 private:
     std::string _name;

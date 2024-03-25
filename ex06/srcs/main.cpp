@@ -1,34 +1,24 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   Harl.hpp                                           :+:      :+:    :+:   */
+/*   main.cpp                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: raveriss <raveriss@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/03/14 13:16:42 by raveriss          #+#    #+#             */
-/*   Updated: 2024/03/24 13:38:26 by raveriss         ###   ########.fr       */
+/*   Created: 2024/03/14 13:29:35 by raveriss          #+#    #+#             */
+/*   Updated: 2024/03/25 17:26:30 by raveriss         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef HARL_H
-#define HARL_H
-
-#include <iostream>
+#include "../include/Harl.hpp"
 #include <string>
 
-class Harl {
-public:
-    Harl();
-    void complain(std::string level);
-    ~Harl();
-
-private:z
-    void debug(void);
-    void info(void);
-    void warning(void);
-    void error(void);
-    void (Harl::*complaints[4])(void);
-    std::string levels[4];
-};
-
-#endif
+int main(int argc, char* argv[]) {
+    if (argc != 2) {
+        std::cerr << "Usage: ./harlFilter <level>" << std::endl;
+        return 1;
+    }
+    Harl harl;
+    harl.filterComplaints(argv[1]);
+    return 0;
+}

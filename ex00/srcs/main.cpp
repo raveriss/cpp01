@@ -6,7 +6,7 @@
 /*   By: raveriss <raveriss@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/13 17:24:17 by raveriss          #+#    #+#             */
-/*   Updated: 2024/03/23 17:59:53 by raveriss         ###   ########.fr       */
+/*   Updated: 2024/03/25 17:45:01 by raveriss         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,7 +24,7 @@
  */
 int main() {
     try {
-        Zombie* heapZombie = newZombie(""); // Test avec un nom vide
+        Zombie* heapZombie = newZombie("Rafael"); // Test avec un nom vide
         heapZombie->announce();
         delete heapZombie;
     } catch (const std::invalid_argument& e) {

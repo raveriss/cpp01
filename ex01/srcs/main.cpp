@@ -6,11 +6,11 @@
 /*   By: raveriss <raveriss@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/13 17:44:05 by raveriss          #+#    #+#             */
-/*   Updated: 2024/03/23 20:25:57 by raveriss         ###   ########.fr       */
+/*   Updated: 2024/03/25 12:54:42 by raveriss         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "Zombie.hpp"
+#include "../include/Zombie.hpp"
 
 /**
  * @brief Point d'entrée principal du programme pour la gestion d'une horde de Zombies.
