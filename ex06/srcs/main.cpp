@@ -6,7 +6,7 @@
 /*   By: raveriss <raveriss@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/14 13:29:35 by raveriss          #+#    #+#             */
-/*   Updated: 2024/03/26 14:16:10 by raveriss         ###   ########.fr       */
+/*   Updated: 2024/03/26 16:30:47 by raveriss         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,15 +14,11 @@
 #include <string>
 
 /**
-    @brief Fonction principale du programme.
-    Cette fonction vérifie le nombre d'arguments passés en ligne de commande. 
-    Si un seul argument n'est pas fourni, elle affiche un message 
-    d'utilisation et renvoie une erreur. 
-    Ensuite, elle crée une instance de la classe Harl et utilise la fonction 
-    filterComplaints pour filtrer les plaintes en fonction du niveau spécifié 
-    par l'argument. 
-    Elle renvoie 0 en cas d'exécution réussie.
-*/
+ * @brief Fonction principale du programme
+ * @param argc: nombre d'arguments en ligne de commande
+ * @param argv: tableau des arguments en ligne de commande
+ * @return 0 si succès, 1 en cas d'erreur
+ */
 int main(int argc, char* argv[]) {
     if (argc != 2) {
         std::cerr << "Usage: ./harlFilter <level>" << std::endl;

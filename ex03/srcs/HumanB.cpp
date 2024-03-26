@@ -6,13 +6,13 @@
 /*   By: raveriss <raveriss@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/14 12:09:16 by raveriss          #+#    #+#             */
-/*   Updated: 2024/03/26 15:55:15 by raveriss         ###   ########.fr       */
+/*   Updated: 2024/03/26 16:28:57 by raveriss         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../include/HumanB.hpp"
 
-/*
+/**
  * @brief Constructeur de HumanB initialisant le nom et l'arme à NULL.
 */
 HumanB::HumanB(const std::string& name) : name(name), weapon(NULL) {}

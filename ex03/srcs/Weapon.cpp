@@ -6,11 +6,10 @@
 /*   By: raveriss <raveriss@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/14 12:07:46 by raveriss          #+#    #+#             */
-/*   Updated: 2024/03/26 15:57:33 by raveriss         ###   ########.fr       */
+/*   Updated: 2024/03/26 16:29:36 by raveriss         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-// Weapon.cpp
 #include "../include/Weapon.hpp"
 
 /**
