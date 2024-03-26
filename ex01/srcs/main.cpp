@@ -6,20 +6,15 @@
 /*   By: raveriss <raveriss@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/13 17:44:05 by raveriss          #+#    #+#             */
-/*   Updated: 2024/03/25 12:54:42 by raveriss         ###   ########.fr       */
+/*   Updated: 2024/03/26 16:23:36 by raveriss         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../include/Zombie.hpp"
 
 /**
- * @brief Point d'entrée principal du programme pour la gestion d'une horde de Zombies.
- * 
- * Cette fonction crée une horde de Zombies, les fait tous annoncer, puis libère la mémoire allouée.
- * Utilise la fonction `zombieHorde` pour créer un tableau de Zombies sur le tas.
- * Chaque Zombie de la horde est ensuite annoncé avant de libérer la mémoire allouée pour la horde entière.
- * 
- * @return int Le code de sortie du programme. Retourne 0 pour indiquer que l'exécution s'est terminée avec succès.
+ * @brief Fonction principale du programme
+ * @return 0 si succès
  */
 int main() {
     int N = 5; // Nombre de zombies dans la horde

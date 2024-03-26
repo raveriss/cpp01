@@ -6,7 +6,7 @@
 /*   By: raveriss <raveriss@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/14 12:09:04 by raveriss          #+#    #+#             */
-/*   Updated: 2024/03/26 13:47:25 by raveriss         ###   ########.fr       */
+/*   Updated: 2024/03/26 16:27:06 by raveriss         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,10 +19,7 @@
 #include <iostream>
 
 /**
- * @brief Classe représentant un humain armé, nommé HumanB.
- *
- * Cette classe modélise un humain qui peut être initialement sans arme puis en être équipé plus tard.
- * Elle permet à l'humain de changer d'arme et d'effectuer une attaque avec l'arme actuellement équipée.
+ * @brief Classe représentant un Humain avec une arme
  */
 class HumanB {
 private:
