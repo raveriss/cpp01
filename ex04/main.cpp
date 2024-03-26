@@ -1,0 +1,76 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   main.cpp                                           :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: raveriss <raveriss@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2024/03/14 13:05:56 by raveriss          #+#    #+#             */
+/*   Updated: 2024/03/26 15:58:38 by raveriss         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
+#include <iostream>
+#include <fstream>
+#include <sstream>
+
+/**
+ * @brief Remplace une chaîne par une autre dans un fichier
+ * @param filename: nom du fichier
+ * @param s1: chaîne à remplacer
+ * @param s2: nouvelle chaîne de remplacement
+ */
+void replaceInFile(const std::string& filename, const std::string& s1, const std::string& s2) {
+    std::ifstream fileIn(filename.c_str());
+    if (!fileIn.is_open()) {
+        std::cerr << "Error opening file: " << filename << std::endl;
+        return;
+    }
+
+    std::ostringstream tempStream;
+    tempStream << fileIn.rdbuf();
+    std::string content = tempStream.str();
+    fileIn.close();
+
+    // Créer une nouvelle chaîne pour le résultat
+    std::string result;
+    size_t pos = 0;
+    size_t startPos = 0;
+    // Trouver et remplacer toutes les occurrences de s1 par s2
+    while ((pos = content.find(s1, startPos)) != std::string::npos) {
+        // Ajouter la portion de chaîne avant l'occurrence trouvée à result
+        result.append(content, startPos, pos - startPos);
+        // Ajouter s2 à result
+        result.append(s2);
+        // Mettre à jour startPos pour continuer la recherche
+        startPos = pos + s1.length();
+    }
+    // Ajouter le reste de la chaîne après la dernière occurrence trouvée
+    result.append(content, startPos);
+
+    std::ofstream fileOut((filename + ".replace").c_str());
+    if (!fileOut.is_open()) {
+        std::cerr << "Error creating file: " << filename << ".replace" << std::endl;
+        return;
+    }
+
+    fileOut << result;
+    fileOut.close();
+}
+
+/**
+ * @brief Fonction principale du programme
+ * @param argc: nombre d'arguments en ligne de commande
+ * @param argv: tableau des arguments en ligne de commande
+ * @return 0 si succès, 1 en cas d'erreur
+ */
+int main(int argc, char* argv[]) {
+    if (argc != 4) {
+        std::cerr << "Usage: " << argv[0] << " <filename> <string_to_replace> <replacement_string>" << std::endl;
+        return 1;
+    }
+
+    replaceInFile(argv[1], argv[2], argv[3]);
+    return 0;
+}
+
