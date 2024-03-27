@@ -6,7 +6,7 @@
 /*   By: raveriss <raveriss@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/13 17:24:17 by raveriss          #+#    #+#             */
-/*   Updated: 2024/03/26 16:07:35 by raveriss         ###   ########.fr       */
+/*   Updated: 2024/03/27 14:52:50 by raveriss         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,6 +26,7 @@ int main() {
         std::cerr << "Erreur : " << e.what() << std::endl;
     }
 
-    randomChump("stackZombie"); 
+    randomChump("stackZombie");
+    
     return 0;
 }

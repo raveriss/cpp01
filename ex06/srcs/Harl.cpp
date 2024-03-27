@@ -6,7 +6,7 @@
 /*   By: raveriss <raveriss@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/14 13:35:21 by raveriss          #+#    #+#             */
-/*   Updated: 2024/03/26 16:06:33 by raveriss         ###   ########.fr       */
+/*   Updated: 2024/03/27 15:55:13 by raveriss         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -67,25 +67,12 @@ void Harl::filterComplaints(std::string level) {
     switch (levelIndex) {
         case 0:
             debug();
-            info();
-            warning();
-            error();
-            std::cout << std::endl;
-            break;
         case 1:
             info();
-            warning();
-            error();
-            std::cout << std::endl;
-            break;
         case 2:
             warning();
-            error();
-            std::cout << std::endl;
-            break;
         case 3:
             error();
-            std::cout << std::endl;
             break;
         default:
             std::cout << "[ Probably complaining about insignificant problems ]" << std::endl;

@@ -6,7 +6,7 @@
 /*   By: raveriss <raveriss@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/14 11:51:45 by raveriss          #+#    #+#             */
-/*   Updated: 2024/03/26 15:52:31 by raveriss         ###   ########.fr       */
+/*   Updated: 2024/03/27 15:00:00 by raveriss         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,6 +41,7 @@ int main()
 	std::cout << "Adresse de str en memoire: " << &str << std::endl;
 	std::cout << "Adresse stockee dans stringPTR: " << stringPTR << std::endl;
 	std::cout << "Adresse stockee dans stringREF: " << &stringREF << std::endl;
+
 
 	std::cout << "Valeur de la string: " << str << std::endl;
 	std::cout << "Valeur pointee par stringPTR: " << *stringPTR << std::endl;
